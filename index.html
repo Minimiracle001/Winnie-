@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Copyright Zygomatic.nl -->
+	<meta charset="utf-8">
+	<title>Traffic Racer 2</title>
+	<meta name="date" content="2022-01-24">
+	<meta name="gameCats" content="Action">
+	<meta property="og:type" content="game">
+	<meta property="og:url" content="https://cdn.htmlgames.com/TrafficRacer2/">
+	<meta property="og:title" content="Traffic Racer 2">
+	<meta property="og:image" content="https://cdn.htmlgames.com/TrafficRacer2/img/icon/image-300x200.jpg">
+	<meta property="og:description" content="Race on the highway and avoid the traffic. Use the arrows or arrow keys to steer your car.">
+	<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,width=device-width,viewport-fit=cover">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#000">
+	<link rel="manifest" href="manifest.json">
+	<link rel="shortcut icon" sizes="196x196" href="img/icon/icon-196x196.png">
+	<link rel="apple-touch-icon" href="img/icon/icon-196x196.png">
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+
+	<script src="js/ThirdParty.js"></script>
+	<script src="js/game.js"></script>
+</head>
+<body>
+<div class="desc">
+	<h1>Traffic Racer 2</h1>
+	<p>Race on the highway and avoid the traffic. Use the arrows or arrow keys to steer your car.</p>
+</div>
+
+<div id="gameContainer"></div>
+
+<script>
+	var gameName = document.title,
+		gameContainer = document.getElementById('gameContainer');
+
+	function orderInit(a)
+	{
+		switch(a) {
+			case 1: loadRec.creatloading(); break;
+			case 2: GameMenu.showMenu(); break;
+			case 3: GameHelp.showHelp(); break;
+			case 4: GamePlay.showPlay(); break;
+			case 5: GameOver.showOver(); break;
+		}
+	}
+
+	GameLib.init(gameName, 480, 800);
+</script>
+<noscript>
+This game needs Javascript. Click here for <a href="//www.actiongame.com">Race games</a>.
+</noscript>
+</body>
+<div><script src="https://cdn.htmlgames.com/embed.js?game=TrafficRacer2&amp;bgcolor=white"></script></div>                                        
+</html>
+
+
